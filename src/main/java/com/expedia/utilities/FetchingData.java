@@ -13,7 +13,7 @@ public class FetchingData {
 public static Object[][] fetchdata() throws IOException {
 		
 		
-		String datafilepath = "resources/testdata.xlsx";
+		String datafilepath = "../../resources/testdata.xlsx";
 
 		FileInputStream fis = new FileInputStream(datafilepath);
 		
