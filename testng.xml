@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ParallelTestSuite -->
-<suite name="ParallelTestSuite" >
+<suite name="ParallelTestSuite" parallel="tests" thread-count="10">
 	<!-- FlightsTest -->
-<!--	<test name="FlightsTest" >
+	<test name="FlightsTest" parallel="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.expedia.Tests.FlightsTest">
 			</class>
 		</classes>
 	</test>
-	 PackageTest 
-	<test name="PackageTest" >
+	<!-- PackageTest -->
+	<test name="PackageTest" parallel="false">
 		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.expedia.Tests.PackageTest">
 			</class>
 		</classes>
 	</test>
-	 CarsTest -->
-	<test name="CarsTest">
+	<!-- CarsTest -->
+	<test name="CarsTest" parallel="false">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.expedia.Tests.CarsTest">
@@ -26,13 +26,13 @@
 		</classes>
 	</test>
 	<!-- HomePageTest -->
-<!--	<test name="DataDrivenTest" >
+	<test name="DataDrivenTest" parallel="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.expedia.Tests.HomePageTest">
 			</class>
 		</classes>
-	</test>-->
+	</test>
 </suite>
 <!-- <groups>
       <run>
