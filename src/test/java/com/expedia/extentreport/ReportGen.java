@@ -14,8 +14,6 @@ import com.expedia.base.TestBase;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.expedia.utilities.TestUtil;
 
-import io.cucumber.java.Scenario;
-
 public class ReportGen extends TestBase {
 
 	public static void reportCreation() {
@@ -114,29 +112,6 @@ public class ReportGen extends TestBase {
 			extenttest.log(Status.INFO, "Platform: Windows 10");
 		}
 	}
-	public static void scenarioReportAfterTest(Scenario scenario) {
-	extenttest = extent.createTest("Cucumber"+ "-" + scenario.getName());
-			extenttest.log(convertStatus(scenario.getStatus()),
-					"Test "+scenario.getStatus()+":" + "Cucumber"+ " - " + scenario.getName() );
-		extenttest.log(Status.INFO, "The test passed successfully.");
-		extenttest.log(Status.INFO, "Additional Info: This test verified all functionalities.");
-		extenttest.log(Status.INFO, "Performance: The test completed in expected time.");
-		extenttest.addScreenCaptureFromPath("Not possible to add Screanshot driver is null");
-		extenttest.log(Status.INFO, "Screenshot captured for reference: " + scenario.getName());
-		extenttest.log(Status.INFO, "Reported By: Team4");
-		extenttest.log(Status.INFO, "Date: " + LocalDate.now());
-		extenttest.log(Status.INFO, "Platform: Windows 10");
-	}
-private static Status convertStatus(io.cucumber.java.Status cucumberStatus) {
-    switch (cucumberStatus) {
-        case PASSED:
-            return Status.PASS;
-        case FAILED:
-            return Status.FAIL;
-        case SKIPPED:
-            return Status.SKIP;
-        default:
-            return Status.INFO;
-    }
-}
+	
+
 }
