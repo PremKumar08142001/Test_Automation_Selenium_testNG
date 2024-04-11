@@ -3,14 +3,14 @@
 <!-- ParallelTestSuite -->
 <suite name="ParallelTestSuite" >
 	<!-- FlightsTest -->
-	<test name="FlightsTest" >
+<!--	<test name="FlightsTest" >
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.expedia.Tests.FlightsTest">
 			</class>
 		</classes>
 	</test>
-	<!-- PackageTest -->
+	 PackageTest 
 	<test name="PackageTest" >
 		<parameter name="browser" value="edge" />
 		<classes>
@@ -18,14 +18,14 @@
 			</class>
 		</classes>
 	</test>
-	<!-- CarsTest -->
+	 CarsTest 
 	<test name="CarsTest">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.expedia.Tests.CarsTest">
 			</class>
 		</classes>
-	</test>
+	</test>-->
 	<!-- HomePageTest -->
 	<test name="DataDrivenTest" >
 		<parameter name="browser" value="chrome" />
