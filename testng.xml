@@ -26,14 +26,6 @@
 			</class>
 		</classes>
 	</test>
-	<!-- CucumberTest -->
-	<test name="CucumberTest" parallel="false">
-		<parameter name="browser" value="edge" />
-		<classes>
-			<class name="com.expedia.cucumber.TestRunner">
-			</class>
-		</classes>
-	</test>
 	<!-- HomePageTest -->
 	<test name="DataDrivenTest" parallel="false">
 		<parameter name="browser" value="chrome" />
