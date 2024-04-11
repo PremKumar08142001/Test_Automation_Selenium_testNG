@@ -18,22 +18,22 @@
 			</class>
 		</classes>
 	</test>
-	 CarsTest 
+	 CarsTest -->
 	<test name="CarsTest">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.expedia.Tests.CarsTest">
 			</class>
 		</classes>
-	</test>-->
+	</test>
 	<!-- HomePageTest -->
-	<test name="DataDrivenTest" >
+<!--	<test name="DataDrivenTest" >
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.expedia.Tests.HomePageTest">
 			</class>
 		</classes>
-	</test>
+	</test>-->
 </suite>
 <!-- <groups>
       <run>
