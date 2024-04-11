@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "dtd/testng-1.0.dtd">
 <!-- ParallelTestSuite -->
 <suite name="ParallelTestSuite" >
 	<!-- FlightsTest -->
