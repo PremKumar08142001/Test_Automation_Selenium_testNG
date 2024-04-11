@@ -11,7 +11,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.expedia.webdrivers.WebDriverFactory;
-import org.testng.annotations.Parameters;
 public class TestBase {
 	public static Properties prop;
 	String projectpath = System.getProperty("user.dir");

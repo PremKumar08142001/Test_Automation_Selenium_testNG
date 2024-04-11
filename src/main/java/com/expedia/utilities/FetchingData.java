@@ -13,7 +13,7 @@ public class FetchingData {
 public static Object[][] fetchdata() throws IOException {
 		
 		
-		String datafilepath = System.getProperty("user.dir")+"/resources/testdata.xlsx";
+		String datafilepath = "resources/testdata.xlsx";
 
 		FileInputStream fis = new FileInputStream(datafilepath);
 		
@@ -46,7 +46,7 @@ public static Object[][] fetchdata() throws IOException {
 	public static void writestatus(int rowcount, boolean status) throws IOException {
 		
 		
-		String datafilepath = System.getProperty("user.dir")+"/Data/testdata.xlsx";
+		String datafilepath = "resources/testdata.xlsx";
 		FileInputStream fis = new FileInputStream(datafilepath);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		Sheet sheet = workbook.getSheetAt(0);
